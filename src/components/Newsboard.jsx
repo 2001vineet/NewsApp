@@ -17,7 +17,7 @@ useEffect(()=>{
   return (
     <div>
 <h2 className="text-center m-4">Latest <span className="badge bg-danger">News</span></h2>
-        {articles?.map((news,index)=>{
+        {articles.map((news,index)=>{
             return <NewsItems key ={index} title={news.title} description={news.description} src = {news.urlToImage} url = {news.url}/>
                 })}
     </div>
